@@ -1,0 +1,45 @@
+@import url(variables.css);
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+/* !TODO: Make this background image fixed */
+header {
+  height: 1000px;
+  background: url(assets/intro-bg.jpg);
+}
+
+nav {
+  display: flex;
+  padding-top: var(--pt);
+  justify-content: space-between;
+}
+
+nav h1 {
+  color: var(--white);
+}
+
+nav span {
+  color: var(--primary);
+}
+
+nav a {
+  color: var(--white);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--blue);
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 1rem;
+}
